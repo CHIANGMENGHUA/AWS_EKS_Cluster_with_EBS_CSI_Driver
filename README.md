@@ -111,20 +111,20 @@
 
    > next
 
-   Add labels:
+3. Add labels:
 
    - Alias: `<Your-KMS-key-Name>`
 
    > next
 
-   Define key administrative permissions:
+4. Define key administrative permissions:
 
    - Key administrators: `<Select-Your-IAM-users>`
    - Key deletion: `<on> / Allow key administrators to delete this key.`
 
    > next
 
-   Define key usage permissions:
+5. Define key usage permissions:
 
    - Key users: `<Select-Your-IAM-users>`
    - Other AWS accounts: `no`
