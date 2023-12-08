@@ -131,7 +131,7 @@
 
    > next
 
-   Review
+6. Review
 
    > Finish
 
