@@ -1,7 +1,7 @@
 #!/bin/bash
 
-my_cluster=$(yq eval '.my_cluster' "../.yaml")
-my_account_id=$(yq eval '.my_account_id' "../.yaml")
+# Load variables from .env file
+source ../.env
 
 eksctl create addon \
     --name aws-ebs-csi-driver \

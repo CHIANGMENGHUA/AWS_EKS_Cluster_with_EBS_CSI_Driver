@@ -57,7 +57,6 @@
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 - [eksctl](https://eksctl.io/installation/)
-- [yq](https://github.com/mikefarah/yq)
 
 ---
 
@@ -142,19 +141,19 @@
 
 ### 1. Create .yaml file and .json file
 
-- Create a `.yaml` file in `"AWS_EKS/"` directory with the following contents, replacing `<...>` with your configurations:
+- Create a `.env` file in `"AWS_EKS/"` directory with the following contents, replacing `<...>` with your configurations:
 
-```yaml
-my_cluster: <Your-Cluster-Name>
-my_eks_role_arn: <Your-AWS-EKS-Role-Arn>
-my_subnet_1_id: <Your-Vpc-Subnet-1>
-my_subnet_2_id: <Your-Vpc-Subnet-2>
-my_subnet_3_id: <Your-Vpc-Subnet-3>
-my_cluster_security_group_id: <Your-Cluster-Security-Group>
-my_account_id: <Your-AWS-Account-ID>
-my_region: <Your-Cluster-Region>
-AmazonEKS_EBS_CSI_DriverRole: <Your-AmazonEKS-EBS-CSI-DriverRole-Name>
-KMS_Key_For_Encryption_On_EBS_Policy: <Your-KMS-Key-For-Encryption-On-EBS-Policy-Name>
+```json
+my_cluster="<Your-Cluster-Name>"
+my_eks_role_arn="<Your-AWS-EKS-Role-Arn>"
+my_subnet_1_id="<Your-Vpc-Subnet-1>"
+my_subnet_2_id="<Your-Vpc-Subnet-2>"
+my_subnet_3_id="<Your-Vpc-Subnet-3>"
+my_cluster_security_group_id="<Your-Cluster-Security-Group>"
+my_account_id="<Your-AWS-Account-ID>"
+my_region="<Your-Cluster-Region>"
+AmazonEKS_EBS_CSI_DriverRole="<Your-AmazonEKS-EBS-CSI-DriverRole-Name>"
+KMS_Key_For_Encryption_On_EBS_Policy="<Your-KMS-Key-For-Encryption-On-EBS-Policy-Name>"
 ```
 
 - Create a file `kms_key_for_encryption_on_ebs.json` in `"AWS_EKS/AWS_EBS_CSI/"` directory with the following contents, replacing `<Your-AWS-KMS-Key-ARN>` with your KMS key ARN that key created in previous:

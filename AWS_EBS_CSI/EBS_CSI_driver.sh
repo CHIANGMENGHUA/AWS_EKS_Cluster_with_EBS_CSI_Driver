@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Load variables from YAML file
-my_cluster=$(yq eval '.my_cluster' "../.yaml")
-KMS_Key_For_Encryption_On_EBS_Policy=$(yq eval '.KMS_Key_For_Encryption_On_EBS_Policy' "../.yaml")
-my_account_id=$(yq eval '.my_account_id' "../.yaml")
+# Load variables from .env file
+source ../.env
 
 # Remove old IAM service account
 eksctl delete iamserviceaccount \

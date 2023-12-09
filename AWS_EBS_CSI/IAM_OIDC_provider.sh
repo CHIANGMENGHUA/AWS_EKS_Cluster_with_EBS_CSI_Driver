@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Load variables from YAML file
-my_cluster=$(yq eval '.my_cluster' "../.yaml")
+# Load variables from .env file
+source ../.env
 
 oidc_id=$(aws eks describe-cluster \
 --name $my_cluster \
