@@ -4,7 +4,7 @@
 
 - AWS Account
 
-### Create IAM Role with AWS account (replace <...> with your configurations) using AWS console:
+### Create IAM Role in AWS account (replace <...> with your configurations) using AWS console:
 
 #### Your AWS EKS Role:
 
@@ -47,7 +47,7 @@
 
 ---
 
-### Create your Cluster VPC & Subnet:
+### Create your Cluster VPC & Subnet in AWS:
 
 - Simple: [https://www.youtube.com/watch?v=ApGz8tpNLgo](https://www.youtube.com/watch?v=ApGz8tpNLgo)
 - Enhanced: [https://www.youtube.com/watch?v=g2JOHLHh4rI](https://www.youtube.com/watch?v=g2JOHLHh4rI)
@@ -62,7 +62,7 @@
 
 ---
 
-### Access key:
+### AWS Access key:
 
 1. Use AWS console to get into
 
@@ -95,7 +95,7 @@
 
 ---
 
-### Create KMS key:
+### Create AWS KMS key:
 
 #### Example:
 
