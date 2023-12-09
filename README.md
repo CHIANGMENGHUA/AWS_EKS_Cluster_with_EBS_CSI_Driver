@@ -141,7 +141,7 @@
 
 ### 1. Create .yaml file and .json file
 
-- Create a `.yaml` file in `"AWS_EKS"` directory with the following contents, replacing `<...>` with your configurations:
+- Create a `.yaml` file in `"AWS_EKS/"` directory with the following contents, replacing `<...>` with your configurations:
 
 ```yaml
 my_cluster: <Your-Cluster-Name>
@@ -156,7 +156,7 @@ AmazonEKS_EBS_CSI_DriverRole: <Your-AmazonEKS-EBS-CSI-DriverRole-Name>
 KMS_Key_For_Encryption_On_EBS_Policy: <Your-KMS-Key-For-Encryption-On-EBS-Policy-Name>
 ```
 
-- Create a file `kms_key_for_encryption_on_ebs.json` in `"AWS_EKS/AWS_EBS_CSI"` directory with the following contents, replacing `<Your-AWS-KMS-Key-ARN>` with your KMS key ARN that key created in previous:
+- Create a file `kms_key_for_encryption_on_ebs.json` in `"AWS_EKS/AWS_EBS_CSI/"` directory with the following contents, replacing `<Your-AWS-KMS-Key-ARN>` with your KMS key ARN that key created in previous:
   - Get into AWS console:
     > KMS / Customer managed keys / `<Your-KMS-key>` / ARN: `<Your-AWS-KMS-Key-ARN>`
 
