@@ -137,6 +137,17 @@
 
 ---
 
+### Make .sh files executable:
+
+```bash
+chmod +x create_AWS_EKS_cluster.sh
+chmod +x connect_to_cluster.sh
+chmod +x AWS_EBS_CSI_setup.sh
+chmod +x AWS_EBS_CSI_delete.sh
+```
+
+---
+
 ## Start create cluster and setup EBS CSI Driver:
 
 ### 1. Create .env file and .json file
@@ -382,7 +393,9 @@ Please note that you need to replace `<my-cluster>`, `<VERSION>`, and `<my_accou
 
 ## @@@ Use terminal(in `"AWS_EKS"` directory) to removing the Amazon EBS CSI add-on by following command:
 
-    ./AWS_EBS_CSI_delete.sh
+```bash
+./AWS_EBS_CSI_delete.sh
+```
 
 ---
 
