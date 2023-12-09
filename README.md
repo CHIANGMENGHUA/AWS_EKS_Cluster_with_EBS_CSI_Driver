@@ -139,9 +139,9 @@
 
 ## Start create cluster and setup EBS CSI Driver:
 
-### 1. Create .yaml file and .json file
+### 1. Create .env file and .json file
 
-- Create a `.env` file in `"AWS_EKS/"` directory with the following contents, replacing `<...>` with your configurations:
+- Create a file `.env` in `"AWS_EKS/"` directory with the following contents, replacing `<...>` with your configurations:
 
 ```c
 my_cluster="<Your-Cluster-Name>"
@@ -191,7 +191,7 @@ KMS_Key_For_Encryption_On_EBS_Policy="<Your-KMS-Key-For-Encryption-On-EBS-Policy
 
 ---
 
-### 2. Use terminal (in the `"AWS_EKS"` directory) to create a new cluster by running the following commands:
+### 2. Use terminal (in the `"AWS_EKS"` directory) to create a new cluster by running the following command:
 
 ```bash
 ./create_AWS_EKS_cluster.sh
@@ -321,7 +321,7 @@ KMS_Key_For_Encryption_On_EBS_Policy="<Your-KMS-Key-For-Encryption-On-EBS-Policy
 
 ---
 
-### 4. Use the terminal (in the `"AWS_EKS"` directory) to connect to the cluster by running the following commands:
+### 4. Use the terminal (in the `"AWS_EKS"` directory) to connect to the cluster by running the following command:
 
 ```bash
 ./connect_to_cluster.sh
@@ -336,7 +336,7 @@ KMS_Key_For_Encryption_On_EBS_Policy="<Your-KMS-Key-For-Encryption-On-EBS-Policy
 
 ---
 
-### 5. Use terminal add all nodes labels for deployment:
+### 5. Use terminal add all nodes labels for deployment by following commands:
 
 ```bash
 kubectl get nodes
@@ -349,7 +349,7 @@ kubectl label nodes <my-node> zone=<my-zone>
 
 ---
 
-### 6. Use terminal (in `"AWS_EKS"` directory) to create EKS cluster by following commands:
+### 6. Use terminal (in `"AWS_EKS"` directory) to create EKS cluster by following command:
 
 ```bash
 ./AWS_EBS_CSI_setup.sh
@@ -380,7 +380,7 @@ Please note that you need to replace `<my-cluster>`, `<VERSION>`, and `<my_accou
 
 ---
 
-## @@@ Use terminal(in `"AWS_EKS"` directory) to removing the Amazon EBS CSI add-on by following commands:
+## @@@ Use terminal(in `"AWS_EKS"` directory) to removing the Amazon EBS CSI add-on by following command:
 
     ./AWS_EBS_CSI_delete.sh
 
