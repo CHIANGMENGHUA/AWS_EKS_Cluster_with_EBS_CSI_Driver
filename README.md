@@ -57,6 +57,7 @@
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 - [eksctl](https://eksctl.io/installation/)
+- [yq](https://github.com/mikefarah/yq)
 
 ---
 
