@@ -143,7 +143,7 @@
 
 - Create a `.env` file in `"AWS_EKS/"` directory with the following contents, replacing `<...>` with your configurations:
 
-```json
+```c
 my_cluster="<Your-Cluster-Name>"
 my_eks_role_arn="<Your-AWS-EKS-Role-Arn>"
 my_subnet_1_id="<Your-Vpc-Subnet-1>"
