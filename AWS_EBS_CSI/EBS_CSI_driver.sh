@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load variables from .env file
-source ../.env
+source .env
 
 # Remove old IAM service account
 eksctl delete iamserviceaccount \

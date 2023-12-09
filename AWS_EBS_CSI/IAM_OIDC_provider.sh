@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load variables from .env file
-source ../.env
+source .env
 
 oidc_id=$(aws eks describe-cluster \
 --name $my_cluster \

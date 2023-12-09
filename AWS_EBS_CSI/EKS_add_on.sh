@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load variables from .env file
-source ../.env
+source .env
 
 eksctl create addon \
     --name aws-ebs-csi-driver \
