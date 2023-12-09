@@ -2,7 +2,7 @@
 
 ## Prerequisite:
 
-## AWS Account
+- AWS Account
 
 ### Create IAM Role with AWS account (replace <...> with your configurations) using AWS console:
 
